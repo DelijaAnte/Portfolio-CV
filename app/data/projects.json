@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Svijet Serija",
+      "code": "https://github.com/DelijaAnte/SvijetSerija",
+      "demo": "https://svijet-serija.vercel.app/",
+      "description": "Stranica za pregled serija i glumaca dohvaćenih s API-ja, uz dodatne funkcionalnosti.",
+      "image": "/svijetserijaslika.png",
+      "tags": ["Next.js", "JavaScript", "Firebase", "Tailwind CSS"]
+    }
+  ]
+}
