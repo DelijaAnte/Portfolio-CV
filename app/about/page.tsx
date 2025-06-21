@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
+import { FiPaperclip } from "react-icons/fi";
 
 const page = () => {
   return (
@@ -55,9 +56,20 @@ const page = () => {
               </p>
             </div>
             <div className="space-y-2">
-              <p className="font-medium">
-                Digitalna Dalmacija JUNIOR Dev – Next.js
-              </p>
+              <div className="space-y-2 flex items-center gap-2">
+                <p className="font-medium">
+                  Digitalna Dalmacija JUNIOR Dev – Next.js
+                </p>
+                <a
+                  href="/diploma.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-400 hover:text-emerald-600 transition-colors cursor-pointer"
+                  title="Pogledaj diplomu"
+                >
+                  <FiPaperclip size={20} />
+                </a>
+              </div>
               <p className="text-neutral-500">
                 Stručni tečaj primijenjenog programiranja u Next.js i React,
                 održan u sklopu EDIT centra Digitalne Dalmacije s ciljem
