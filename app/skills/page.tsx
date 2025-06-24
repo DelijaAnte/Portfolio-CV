@@ -2,6 +2,33 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { BsArrowLeft } from "react-icons/bs";
 import skillsData from "../data/skills.json";
+import { IconType } from "react-icons";
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiHtml5,
+  SiFirebase,
+  SiC,
+  SiCplusplus,
+  SiGithub,
+  SiJira,
+} from "react-icons/si";
+import { FaRegComments, FaGlobeAmericas } from "react-icons/fa";
+
+const iconMap: Record<string, IconType> = {
+  nextjs: SiNextdotjs,
+  typescript: SiTypescript,
+  tailwindcss: SiTailwindcss,
+  html5: SiHtml5,
+  firebase: SiFirebase,
+  c: SiC,
+  cplusplus: SiCplusplus,
+  github: SiGithub,
+  jira: SiJira,
+  communication: FaRegComments,
+  language: FaGlobeAmericas,
+};
 
 const page = () => {
   return (
@@ -27,20 +54,18 @@ const page = () => {
             <div key={category.name} className="space-y-4">
               <h2 className="text-2xl">{category.name}</h2>
               <div className="grid grid-cols-2 gap-4">
-                {category.skills.map((skill) => (
-                  <div
-                    key={skill.name}
-                    className="p-4 rounded-lg border border-gray-700/50 bg-black/40"
-                  >
-                    <h3 className="font-medium mb-2">{skill.name}</h3>
-                    <div className="w-full bg-gray-200 rounded-full h-2.5">
-                      <div
-                        className="bg-emerald-400 h-2.5 rounded-full"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
+                {category.skills.map((skill) => {
+                  const Icon = iconMap[skill.icon] || null;
+                  return (
+                    <div
+                      key={skill.name}
+                      className="p-4 rounded-lg border border-gray-700/50 bg-black/40 flex items-center gap-3"
+                    >
+                      {Icon && <Icon className="text-3xl text-emerald-400" />}
+                      <h3 className="font-medium">{skill.name}</h3>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           ))}

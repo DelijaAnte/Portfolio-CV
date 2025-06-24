@@ -3,30 +3,33 @@
     {
       "name": "Frontend",
       "skills": [
-        { "name": "Next.js ( React )", "level": 70 },
-        { "name": "TypeScript / Javascript", "level": 70 },
-        { "name": "Tailwind CSS / CSS", "level": 70 },
-        { "name": "HTML", "level": 85 }
+        { "name": "Next.js ( React )", "icon": "nextjs" },
+        { "name": "TypeScript / Javascript", "icon": "typescript" },
+        { "name": "Tailwind CSS / CSS", "icon": "tailwindcss" },
+        { "name": "HTML", "icon": "html5" }
       ]
     },
     {
       "name": "Backend",
       "skills": [
-        { "name": "Firebase", "level": 80 },
-        { "name": "C", "level": 50 },
-        { "name": "C++", "level": 50 }
+        { "name": "Firebase", "icon": "firebase" },
+        { "name": "C", "icon": "c" },
+        { "name": "C++", "icon": "cplusplus" }
       ]
     },
     {
       "name": "Alati i ostalo",
       "skills": [
-        { "name": "Git & GitHub", "level": 80 },
-        { "name": "Jira", "level": 95 }
+        { "name": "Git & GitHub", "icon": "github" },
+        { "name": "Jira", "icon": "jira" }
       ]
     },
     {
       "name": "Soft Skills",
-      "skills": [{ "name": "Komunikacijske vještine", "level": 100 }]
+      "skills": [
+        { "name": "Komunikacijske vještine", "icon": "communication" },
+        { "name": "Engleski jezik (B2)", "icon": "language" }
+      ]
     }
   ]
 }
