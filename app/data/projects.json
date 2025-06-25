@@ -25,6 +25,15 @@
         "ShadCN",
         "Framer Motion"
       ]
+    },
+    {
+      "id": 3,
+      "title": "Portfolio",
+      "code": "https://github.com/DelijaAnte/Portfolio-CV",
+      "demo": "/",
+      "description": "Osobna portfolio stranica za predstavljanje projekata, vještina i iskustva.",
+      "image": "/portfolioslika2.png",
+      "tags": ["Next.js", "TypeScript", "Tailwind CSS"]
     }
   ]
 }
