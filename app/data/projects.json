@@ -7,23 +7,22 @@
       "demo": "https://svijet-serija.vercel.app/",
       "description": "Stranica za pregled serija i glumaca dohvaćenih s API-ja, uz dodatne funkcionalnosti.",
       "image": "/svijetserijaslika.png",
-      "tags": ["Next.js", "JavaScript", "Firebase", "Tailwind CSS", "ShadCN"]
+      "tags": ["Next.js", "JavaScript", "Firebase DB", "Tailwind CSS", "ShadCN"]
     },
     {
       "id": 2,
       "title": "FitAI",
       "code": "https://github.com/DelijaAnte/FitAI",
       "demo": "https://fit-ai-rho.vercel.app/",
-      "description": "Platforma za fitness s raznim fukcionalnostima s elementima AI-ja",
+      "description": "Platforma za fitness s raznim fukcionalnostima s elementima AI-ja.",
       "image": "/fitaislika.png",
       "tags": [
         "Next.js",
         "TypeScript",
         "OpenAI API",
-        "Firebase",
         "Tailwind CSS",
         "ShadCN",
-        "Framer Motion"
+        "Firebase Auth/DB"
       ]
     },
     {
@@ -34,6 +33,15 @@
       "description": "Osobna portfolio stranica za predstavljanje projekata, vještina i iskustva.",
       "image": "/portfolioslika2.png",
       "tags": ["Next.js", "TypeScript", "Tailwind CSS"]
+    },
+    {
+      "id": 4,
+      "title": "MoneyTrack",
+      "code": "https://github.com/DelijaAnte/MoneyTrack",
+      "demo": "https://money-track-nine.vercel.app/",
+      "description": "Aplikacija za praćenje osobnih financija poput prihoda,rashoda i štednje.",
+      "image": "/moneytrackslika2.png",
+      "tags": ["HTML", "CSS", "JavaScript"]
     }
   ]
 }
