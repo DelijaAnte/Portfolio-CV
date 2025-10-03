@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -5,9 +7,11 @@ import { BiLogoGithub } from "react-icons/bi";
 import { CgExternal } from "react-icons/cg";
 import { BsArrowLeft } from "react-icons/bs";
 import projectsData from "../data/projects.json";
+import { useTranslations } from "@/lib/useTranslations";
 
-const page = () => {
+const Page = () => {
   const { projects } = projectsData;
+  const { t } = useTranslations();
 
   return (
     <div className="min-h-screen flex items-center justify-center">
@@ -18,12 +22,12 @@ const page = () => {
               variant="ghost"
               className="hover:bg-black absolute left-0 hover:text-white rounded-full duration-300 cursor-pointer"
             >
-              Natrag <BsArrowLeft className="ml-2" />
+              {t("navigation.back")} <BsArrowLeft className="ml-2" />
             </Button>
           </Link>
 
           <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-sky-300 h-14 mt-14 sm:mt-0">
-            Moji projekti
+            {t("work.title")}
           </h1>
         </div>
 
@@ -43,7 +47,13 @@ const page = () => {
               </div>
               <div className="p-4 space-y-4">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
-                <p className="text-gray-300">{project.description}</p>
+                <p className="text-gray-300">
+                  {t(
+                    `projects.${project.title
+                      .toLowerCase()
+                      .replace(/\s+/g, "")}.description`
+                  )}
+                </p>
 
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, index) => (
@@ -68,7 +78,7 @@ const page = () => {
                       rel="noopener noreferrer"
                     >
                       <BiLogoGithub className="h-4 w-4 mr-2" />
-                      Kod
+                      {t("work.viewCode")}
                     </a>
                   </Button>
 
@@ -82,7 +92,7 @@ const page = () => {
                       rel="noopener noreferrer"
                     >
                       <CgExternal className="mr-2 h-4 w-4" />
-                      Live verzija
+                      {t("work.viewDemo")}
                     </a>
                   </Button>
                 </div>
@@ -95,4 +105,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

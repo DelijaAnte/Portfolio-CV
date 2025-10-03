@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { LanguageToggle } from "@/components/LanguageToggle";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased bg-black text-white`}>
+        <div className="fixed top-4 right-4 z-50">
+          <LanguageToggle />
+        </div>
         <div className="fixed inset-0 w-full h-full z-10">
           <video
             autoPlay

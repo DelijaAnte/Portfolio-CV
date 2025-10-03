@@ -1,0 +1,87 @@
+{
+  "navigation": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "back": "Back",
+    "menu": "Menu",
+    "social": "Social Media"
+  },
+  "home": {
+    "title": "Ante Delija",
+    "subtitle": "Student",
+    "description": "Hello, I'm Ante. I'm currently a 3rd year computer science student working on additional education and personal projects.",
+    "contactMe": "Contact me",
+    "available": "Available for work",
+    "location": "Sinj, Croatia"
+  },
+  "about": {
+    "title": "About me",
+    "description": "Hello, I'm Ante Delija, a 3rd year undergraduate computer science student at",
+    "fesb": "FESB",
+    "description2": "I'm eager for new challenges and opportunities to work and learn, and in my free time I continue to educate myself and work on personal projects.",
+    "education": "Education",
+    "degree": "Bachelor of Computer Engineering",
+    "university": "FESB, University of Split, Croatia",
+    "course": "Digitalna Dalmacija JUNIOR Dev – Next.js",
+    "courseDescription": "Professional course in applied programming in Next.js and React, held as part of the EDIT center of Digitalna Dalmacija with the aim of improving IT skills and preparing for work in the IT industry.",
+    "diploma": "View diploma",
+    "highSchool": "General Gymnasium",
+    "highSchoolLocation": "Srednja škola Dinka Šimunovića, Sinj",
+    "experience": "Professional Experience",
+    "noExperience": "I currently don't have professional experience, but I'm motivated to learn and develop."
+  },
+  "work": {
+    "title": "Projects",
+    "viewCode": "View code",
+    "viewDemo": "View demo"
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools & Others",
+      "softSkills": "Soft Skills"
+    },
+    "skillNames": {
+      "nextjs": "Next.js ( React )",
+      "typescript": "TypeScript / Javascript",
+      "tailwindcss": "Tailwind CSS / CSS",
+      "html5": "HTML",
+      "firebase": "Firebase",
+      "c": "C",
+      "cplusplus": "C++",
+      "github": "Git & GitHub",
+      "jira": "Jira",
+      "communication": "Communication Skills",
+      "language": "English Language (B2)"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "If you have any questions, offer a job or internship, feel free to contact me. I will be grateful for your interest and any opportunity that comes my way.",
+    "email": "Email",
+    "phone": "Contact number",
+    "location": "Location"
+  },
+  "projects": {
+    "svijetserija": {
+      "title": "Svijet Serija",
+      "description": "Page for viewing series and actors fetched from API, with additional features."
+    },
+    "fitai": {
+      "title": "FitAI",
+      "description": "Fitness platform with various features with AI elements."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Personal portfolio page for presenting projects, skills and experience."
+    },
+    "moneytrack": {
+      "title": "MoneyTrack",
+      "description": "Application for tracking personal finances such as income, expenses and savings."
+    }
+  }
+}
