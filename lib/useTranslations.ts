@@ -1,24 +1,27 @@
-// Custom hook za dohvaćanje prijevoda na temelju trenutnog jezika
 import { useLanguageStore } from "./store";
 import hrTranslations from "../locales/hr.json";
 import enTranslations from "../locales/en.json";
 
+type Translations = Record<string, unknown>;
+
 export const useTranslations = () => {
-  // Dohvaća trenutni jezik iz Zustand store-a
   const { language } = useLanguageStore();
+  const translations: Translations =
+    language === "hr" ? hrTranslations : enTranslations;
 
-  // Odabire odgovarajuću JSON datoteku s prijevodima na temelju jezika
-  const translations = language === "hr" ? hrTranslations : enTranslations;
-
-  // Funkcija za dohvaćanje prijevoda po ključu (npr. "home.title")
-  const t = (key: string) => {
+  const t = (key: string): string => {
     return (
-      // Dijeli ključ po točkama i traži vrijednost u objektu prijevoda
-      // Ako ne pronađe prijevod, vraća originalni ključ
-      key.split(".").reduce((obj: any, k) => obj?.[k], translations) || key
+      (key
+        .split(".")
+        .reduce(
+          (obj: unknown, k) =>
+            typeof obj === "object" && obj
+              ? (obj as Record<string, unknown>)[k]
+              : undefined,
+          translations
+        ) as string) || key
     );
   };
 
-  // Vraća funkciju t() za prijevode i trenutni jezik
   return { t, language };
 };
