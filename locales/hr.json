@@ -30,7 +30,11 @@
     "highSchool": "Opća gimnazija",
     "highSchoolLocation": "Srednja škola Dinka Šimunovića, Sinj",
     "experience": "Profesionalno iskustvo",
-    "noExperience": "Trenutno nemam profesionalnog iskustva, ali sam motiviran za učenje i razvoj."
+    "ericssonCompany": "Ericsson Nikola Tesla",
+    "ericssonPosition": "Software Developer (Cloud)",
+    "ericssonPeriod": "Siječanj 2025. - danas",
+    "ericssonContract": "Studentski ugovor (hibridno)",
+    "ericssonDescription": "Rad u BSP timu. Tehnologije: Erlang, Linux, Jira."
   },
   "work": {
     "title": "Projekti",

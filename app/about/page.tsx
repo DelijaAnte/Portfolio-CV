@@ -81,7 +81,12 @@ const Page = () => {
               {t("about.experience")}
             </h2>
 
-            <p className="text-neutral-500 italic">{t("about.noExperience")}</p>
+            <div className="space-y-2">
+              <p className="font-medium">{t("about.ericssonCompany")}</p>
+              <p className="text-neutral-500">{t("about.ericssonPosition")}</p>
+              <p className="text-neutral-400 text-sm">{t("about.ericssonPeriod")} · {t("about.ericssonContract")}</p>
+              <p className="text-neutral-500">{t("about.ericssonDescription")}</p>
+            </div>
           </div>
         </div>
       </main>
