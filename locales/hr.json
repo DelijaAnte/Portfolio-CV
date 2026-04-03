@@ -54,11 +54,14 @@
       "typescript": "TypeScript / Javascript",
       "tailwindcss": "Tailwind CSS / CSS",
       "html5": "HTML",
+      "reactnative": "React Native",
+      "expo": "Expo",
       "firebase": "Firebase",
       "c": "C",
       "cplusplus": "C++",
       "github": "Git & GitHub",
       "jira": "Jira",
+      "linux": "Linux",
       "communication": "Komunikacijske vještine",
       "language": "Engleski jezik (B2)"
     }

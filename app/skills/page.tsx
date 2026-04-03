@@ -15,7 +15,10 @@ import {
   SiCplusplus,
   SiGithub,
   SiJira,
+  SiExpo,
+  SiLinux,
 } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 import { FaRegComments, FaGlobeAmericas } from "react-icons/fa";
 import { useTranslations } from "@/lib/useTranslations";
 
@@ -24,11 +27,14 @@ const iconMap: Record<string, IconType> = {
   typescript: SiTypescript,
   tailwindcss: SiTailwindcss,
   html5: SiHtml5,
+  reactnative: TbBrandReactNative,
+  expo: SiExpo,
   firebase: SiFirebase,
   c: SiC,
   cplusplus: SiCplusplus,
   github: SiGithub,
   jira: SiJira,
+  linux: SiLinux,
   communication: FaRegComments,
   language: FaGlobeAmericas,
 };

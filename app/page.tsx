@@ -25,7 +25,7 @@ export default function Home() {
             <h3 className="text-gray-400"> {t("home.location")} </h3>
           </div>
 
-          <Button
+          {/* <Button
             variant="ghost"
             className="hover:bg-black/50 duration-300 hover:text-white rounded-full"
           >
@@ -34,7 +34,7 @@ export default function Home() {
               <span className="inline-flex rounded-full h-3 w-3 bg-green-500"></span>
             </div>
             <p>{t("home.available")}</p>
-          </Button>
+          </Button> */}
         </div>
 
         <div>

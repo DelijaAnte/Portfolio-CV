@@ -6,7 +6,9 @@
         { "name": "Next.js ( React )", "icon": "nextjs" },
         { "name": "TypeScript / Javascript", "icon": "typescript" },
         { "name": "Tailwind CSS / CSS", "icon": "tailwindcss" },
-        { "name": "HTML", "icon": "html5" }
+        { "name": "HTML", "icon": "html5" },
+        { "name": "React Native", "icon": "reactnative" },
+        { "name": "Expo", "icon": "expo" }
       ]
     },
     {
@@ -21,7 +23,8 @@
       "name": "Alati i ostalo",
       "skills": [
         { "name": "Git & GitHub", "icon": "github" },
-        { "name": "Jira", "icon": "jira" }
+        { "name": "Jira", "icon": "jira" },
+        { "name": "Linux", "icon": "linux" }
       ]
     },
     {
